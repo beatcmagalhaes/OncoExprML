@@ -1,0 +1,12 @@
+Step,Approximate temporal complexity,Approximate spatial complexity,Application in this project
+Data validation,O(n × p),O(n × p),Validation of the matrix with 801 samples and 20531 features.
+Standardization,O(n × p),O(n × p),Mean and standard deviation calculated for each feature.
+PCA,O(n × p × r),O(n × r + p × r),Reduction from 20531 features to 50 principal components.
+K-Means,O(i × n × q × r),O(n × r + q × r),Clustering of samples into 5 clusters in PCA space.
+Logistic Regression,O(i × n × p × c),O(p × c),Multiclass supervised baseline with 5 classes.
+Linear SVM,Approximately O(n × p) to O(n² × p),O(p × c),SVM classification using the original high-dimensional feature space.
+Linear SVM + PCA,O(n × p × r) + SVM cost in reduced space,O(n × r + p × r),SVM classification after PCA dimensionality reduction.
+k-NN training,O(n_train × r),O(n_train × r),Stores training samples after PCA reduction.
+k-NN prediction,O(n_test × n_train × r),O(n_train × r),Computes distances between test and training samples.
+SelectKBest ANOVA,O(n × p),O(p),Selects anonymous features with higher discriminative power.
+Cross-validation,O(F × model cost),O(model storage),Repeats training and evaluation across 5 folds.

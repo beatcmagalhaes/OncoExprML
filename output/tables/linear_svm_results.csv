@@ -1,0 +1,2 @@
+Model,Accuracy,Precision macro,Recall macro,F1-score macro
+Linear SVM,0.9937888198757764,0.9967213114754099,0.9928571428571429,0.994710743801653

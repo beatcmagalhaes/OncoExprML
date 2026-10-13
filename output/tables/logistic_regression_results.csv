@@ -1,0 +1,2 @@
+Model,Accuracy,Precision macro,Recall macro,F1-score macro
+Logistic Regression,0.9813664596273292,0.9768139040680024,0.9732142857142858,0.9749380165289256

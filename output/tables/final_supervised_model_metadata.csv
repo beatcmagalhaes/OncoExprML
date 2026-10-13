@@ -1,0 +1,2 @@
+Final supervised model,Model file,Backward-compatible file
+Linear SVM + PCA 50,final_model_supervised.joblib,final_model_linear_svm.joblib
